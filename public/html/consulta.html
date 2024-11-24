@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>Gestor de Solicitudes On-Line</title>
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=devide-width, initial-scale=1">
+        
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/estilo.css" rel="stylesheet">
+    </head>
+    <body>
+        <section class="container-fluid" id="Lista">
+            <div class="col-sm-2 col-md-2">
+                <img class="logo2" src="../img/logo.png">
+                <br>
+                <br>
+                <div class="collapse navbar-collapse" id="movilmenu">
+                    <ul class="nav navbar-nav">
+                        <li><a href="home.html"><img class="ico" src="../img/ico-dashboard.png"> DashBoard</a></li>
+                        <li><a href="solicitud.html"><img class="ico" src="../img/ico-crearsol.png"> Crear Solicitud</a></li>
+                        <li><a href=""><img class="ico" src="../img/ico-buscar.png"> Consultas</a>
+                            <ul>
+                                <li><a href="consulta.html">Todas las Solicitudes</a></li>
+                                <li><a href="solicitud.html">Por ID de Solicitud</a></li>
+                            </ul>
+                        </li>      
+                        <li><a href=""><img class="ico" src="../img/ico-usuario.png"> Administracion</a>
+                            <ul>
+                                <li><a href="usuarios.html">Usuarios</a></li>
+                                <li><a href="areas.html">Areas</a></li>
+                                <li><a href="estados.html">Estados</a></li>
+                            </ul>
+                        </li>           
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-10 col-md-10">
+                <div class="col-sm-12 col-md-12">
+                    <div class="col-sm-8 col-md-8">
+                        <h1>Bienvenido al gestor de Solicitudes</h1>
+                    </div>
+                    <div class="col-sm-4 col-md-4 pull-right">
+                        <ul class="nav navbar-nav pull-right">
+                            <li class="li-b"><a href="solicitud.html"><img class="ico2" src="../img/ico-buscar.png"></a></li>
+                            <li class="li-b"><a href=""><img class="ico2" src="../img/ico-alerta.png"></a></li>
+                            <li><a href=""><img class="ico" src="../img/ico-usuario.png"> Usuario</a></li>              
+                        </ul>
+                    </div>     
+                </div>
+                <br>
+                <br>
+                <div class="col-sm-12 col-md-12" id="card">
+                    <div class="col-sm-2 col-md-2" id="cab">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h3 class="card-title">Solicitudes Abierta</h3>
+                                <p class="card-text">1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 col-md-2" id="cpr">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h3 class="card-title">Solicitudes en Proceso</h3>
+                                <p class="card-text">2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 col-md-2" id="cge">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h3 class="card-title">Solicitudes Gestionadas</h3>
+                                <p class="card-text">1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 col-md-2" id="cre">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h3 class="card-title">Solicitudes Rechazadas</h3>
+                                <p class="card-text">1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 col-md-2" id="cto">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h3 class="card-title">Total de Solicitudes</h3>
+                                <p class="card-text">5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="../js/jquery.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/script.js"></script>
+    </body>
+</html>
+
+

@@ -1,0 +1,194 @@
+<html>
+    <head>
+        <title>Gestor de Solicitudes On-Line</title>
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=devide-width, initial-scale=1">
+        
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/estilo.css" rel="stylesheet">
+    </head>
+    <body>
+        <section class="container-fluid" id="Lista">
+            <div class="col-sm-2 col-md-2">
+                <img class="logo2" src="../img/logo.png">
+                <br>
+                <br>
+                <div class="collapse navbar-collapse" id="movilmenu">
+                    <ul class="nav navbar-nav">
+                        <li><a href="home.html"><img class="ico" src="../img/ico-dashboard.png"> DashBoard</a></li>
+                        <li><a href="solicitud.html"><img class="ico" src="../img/ico-crearsol.png"> Crear Solicitud</a></li>
+                        <li><a href=""><img class="ico" src="../img/ico-buscar.png"> Consultas</a>
+                            <ul>
+                                <li><a href="consulta.html">Todas las Solicitudes</a></li>
+                                <li><a href="solicitud.html">Por ID de Solicitud</a></li>
+                            </ul>
+                        </li>      
+                        <li><a href=""><img class="ico" src="../img/ico-usuario.png"> Administracion</a>
+                            <ul>
+                                <li><a href="usuarios.html">Usuarios</a></li>
+                                <li><a href="areas.html">Areas</a></li>
+                                <li><a href="estados.html">Estados</a></li>
+                            </ul>
+                        </li>           
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-10 col-md-10">
+                <div class="col-sm-12 col-md-12">
+                    <div class="col-sm-8 col-md-8">
+                        <h1>Bienvenido al gestor de Solicitudes</h1>
+                    </div>
+                    <div class="col-sm-4 col-md-4 pull-right">
+                        <ul class="nav navbar-nav pull-right">
+                            <li class="li-b"><a href="solicitud.html"><img class="ico2" src="../img/ico-buscar.png"></a></li>
+                            <li class="li-b"><a href=""><img class="ico2" src="../img/ico-alerta.png"></a></li>
+                            <li><a href=""><img class="ico" src="../img/ico-usuario.png"> Usuario</a></li>              
+                        </ul>
+                    </div>     
+                </div>
+                <br>
+                <br>
+                <div class="col-sm-12 col-md-12" id="card">
+                    <div class="col-sm-2 col-md-2" id="cab">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h3 class="card-title">Solicitudes Abierta</h3>
+                                <p class="card-text">1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 col-md-2" id="cpr">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h3 class="card-title">Solicitudes en Proceso</h3>
+                                <p class="card-text">2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 col-md-2" id="cge">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h3 class="card-title">Solicitudes Gestionadas</h3>
+                                <p class="card-text">1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 col-md-2" id="cre">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h3 class="card-title">Solicitudes Rechazadas</h3>
+                                <p class="card-text">1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 col-md-2" id="cto">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h3 class="card-title">Total de Solicitudes</h3>
+                                <p class="card-text">5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-1 col-md-1">
+                        <div class="form-group">
+                            <input class="btn btn-primary btn-block" type="button" value="ID Solicitud" id="boton">
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-md-8">
+                        <br>
+                        <form class="solicitud">     
+                            <div class="col-sm-6 col-md-6">
+                                <label for="tipos">Tipo de Solicitud</label> 
+                                <div class="form-group">
+                                    <select class="form-control" name="tipos" id="tipos">
+                                        <option value="SIN">Solicitud de Informacion</option>
+                                        <option value="COR">Correspondencia</option>
+                                        <option value="QUE">Quejas</option>
+                                        <option value="REC">Reclamos</option>
+                                        <option value="SUG">Sugerencias</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <label for="estado">Estado de la Solicitud</label>
+                                    <input class="form-control" type="text" id="estado" placeholder="Estado de Solicitud"/>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12">
+                                <label for="email">Email</label>
+                                <div class="form-group">
+                                    <input class="form-control" type="email" id="email" placeholder="Escribe tú e-mail"/>
+                                </div>
+                            </div>          
+                            <div class="col-sm-6 col-md-6">
+                            <label for="asuntos">Asunto</label>
+                            <div class="form-group">
+                                <select class="form-control" name="asuntos" id="asuntos">
+                                    <option value="---">--- Seleccione un Asunto --</option>
+                                    <option value="OTR">Otro</option>
+                                </select>
+                            </div>
+                            </div>
+                                <div class="col-sm-6 col-md-6">
+                                <label for="oasunto">Otro:</label>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" id="oasunto" placeholder="Escriba el Asunto"/>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12">
+                                <label for="detalle">Detalle</label>
+                                <div class="form-group">
+                                    <textarea class="form-control" type="text" id="detalle" placeholder="Detalle de la solicitud">
+                                    </textarea>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12">
+                                <label for="respuesta">Respuesta a la Solicitud</label>
+                                <div class="form-group">
+                                    <textarea class="form-control" type="text" id="respuesta" placeholder="Detalle de la respuesta">
+                                    </textarea>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <input class="btn btn-secondary btn-block" type="button" value="Anexos Solicitud" id="boton">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <input class="btn btn-secondary btn-block" type="button" value="Anexos Respuesta" id="boton">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12">
+                                <div class="form-group">
+                                    <input class="btn btn-primary btn-block" type="submit" value="REGISTRAR" id="boton">
+                                </div>
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <div class="col-sm-3 col-md-3">
+                        <label for="anexos">Anexos de la Solicitud</label>
+                        <div class="form-group">
+                            <textarea class="form-control" type="text" id="anexos">Documentos Anexos a la solicitud
+                            </textarea>
+                        </div>
+                        <label for="anexor">Anexos de la Respuesta</label>
+                        <div class="form-group">
+                            <textarea class="form-control" type="text" id="anexor">Documentos Anexos a la respuesta
+                            </textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <script src="../js/jquery.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/script.js"></script>
+    </body>
+</html>
+
+

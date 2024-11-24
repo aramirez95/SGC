@@ -1,0 +1,96 @@
+.body{
+    background-image: url("../img/FondoP.png");
+    background-size: cover;
+}
+.logo{
+    width: 100%;
+}
+.logo2{
+    margin-top: 5%;
+    width: 100%;
+}
+.ico{
+    width: 21%;
+}
+.ico2{
+    width: 100%;
+}
+#barra{
+    margin-top: 2%;
+    font-size: 2rem;
+}
+#lista{
+    margin: 0;
+    font-size: 1.8rem;
+}
+#boton{
+    border-radius: 20px;
+    font-weight: bold;
+}
+#contenido{
+    margin: 2%;
+}
+.principal{
+    font-size: 7rem;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.compania{
+    font-size: 3rem;
+    font-weight: normal;
+    font-family: sans-serif;
+}
+.textop{
+    font-size: 2rem;
+    font-weight: normal;
+    font-family: sans-serif;
+}
+.titulo{
+    margin: 6% 16% 0 7%;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+}
+.contacto{
+    margin-top: 5%;
+    font-size: 2rem;
+}
+.inicios{
+    margin: 2% 17% 0 7%;
+    font-family: sans-serif;
+    text-align: center;
+}
+.li-b{
+    width: 65px;
+}
+#card{
+    margin-top: 2%;
+}
+#cab{
+    background-color: #94bd7e;
+    margin: 1%;
+}
+#cpr{
+    background-color: #eeed90;
+    margin: 1%;
+}
+#cge{
+    background-color: #499ad3;
+    margin: 1%;
+}
+#cre{
+    background-color: #ed827f;
+    margin: 1%;
+}
+#cto{
+    background-color: #C6C4C3;
+    margin: 1%;
+}
+.soicitud{
+    margin-top: 2%;
+    font-size: 2rem;
+}
+#donut-chart{
+    font-weight: bold;
+}

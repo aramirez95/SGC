@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Gestor de Solicitudes On-Line</title>
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=devide-width, initial-scale=1">
+        
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/estilo.css" rel="stylesheet">
+    </head>
+    <body>
+        <section class="container-fluid" id="barra">
+            <div class="col-sm-2 col-md-2">
+                <img class="logo" src="../img/logo.png">
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <div class="collapse navbar-collapse" id="movilmenu">
+                <ul class="nav navbar-nav">
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="preguntas.html">PREGUNTAS FRECUENTES</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>              
+                </ul>
+            </div>
+            </div>
+            <div class="col-sm-4 col-md-4">
+                <div class="collapse navbar-collapse pull-right">
+                    <a href="ingreso.html">
+                        <button type="button" class="btn btn-primary navbar-btn" id="boton">
+                            INGRESAR
+                        </button>
+                    </a>
+                    <a href="registro.html">
+                        <button type="button" class="btn btn-primary navbar-btn" id="boton">
+                            REGISTRASE
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <h3 class="titulo">CONTACTO</h3>
+        </section>
+        <section class="container-fluid" id="contenido">
+            <div class="col-sm-6 col-md-6">
+                <h3 class="compania">Utiliza las siguientes vías de contacto, o rellena el formulario.</h3>
+                <br>
+                <p class="textop">Vía E-mail</p>
+                <p class="textop"><u>hola@cliente.com</u></p>
+                <p class="textop">En nuestras redes sociales</p>
+                <p class="textop"><u>@cliente</u></p>
+                <p class="textop">Por teléfono</p>
+                <p class="textop"><u>91-1234-567</u></p>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <form class="contacto">
+                    <div class="form-group">
+                        <input class="form-control" type="text" id="nombre" placeholder="Escribe tú Nombre completo"/>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="email" id="email" placeholder="Escribe tú e-mail"/>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="tel" id="telefono" placeholder="Escribe tú teléfono"/>  
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="comentario" placeholder="Deja tú comentario..."></textarea>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input class="btn btn-primary btn-block" type="submit" value="ENVIAR MENSAJE" id="boton">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <script src="../js/jquery.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/script.js"></script>
+    </body>
+</html>
+
+
