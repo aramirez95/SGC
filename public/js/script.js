@@ -73,3 +73,65 @@ async function deleteUsuario(id) {
     getUsuarios();
 }
 
+//funcion para agregar areas
+async function addArea() {
+    console.log('Registrar Usuario');
+    const codigo = document.getElementById('codigo').value;
+    const nombrea = document.getElementById('nombrea').value;
+    const estado = 101;
+    console.log('Crear Area ', codigo,nombrea,estado);
+    console.log(JSON.stringify({ codigo,nombrea,estado }));
+    await fetch(`${apiURL}/a`,{
+        method: 'POST',
+        headers: {'Content-type': 'application/json'},
+        body: JSON.stringify({ codigo,nombrea,estado })
+    })
+    alert("Area Creada Correctamente");
+    location.href="http://localhost:773/html/areas.html";
+}
+
+//funcion para obtener todas las areas
+async function getAreas(){
+    console.log('Cargar Areas');
+    const response =await fetch(`${apiURL}/a`);
+    const areas = await response.json();
+    const areasContainer = document.getElementById('areas');
+    areasContainer.innerHTML = "";
+    areas.forEach(area => {
+        areasContainer.innerHTML+= 
+        `
+                    <tr>
+                        <th scope="row">${area.codigo}</th>
+                        <td>${area.nombrea}</td>
+                        <td>${area.estado}</td>
+                        <td><button onclick="updateArea('${area._id}')">Actualizar</td>
+                        <td><button onclick="deleteArea('${area._id}')">Eliminar</td>
+                    </tr>
+        `;
+    });
+}
+
+//funcion para actualizar areas
+async function updateArea(id) {
+    console.log('actualiza area ', id);
+    const codigo = prompt("Nuevo codigo:");
+    const nombrea = prompt("Nuevo nombre:"); 
+    const estado = prompt("Nuevo estado:");
+    console.log('Datos nuevos ', codigo,nombrea,estado );
+    console.log(JSON.stringify({ codigo,nombrea,estado }));
+    await fetch(`${apiURL}/a/${id}`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ codigo,nombrea,estado })
+    })
+    getAreas();
+}
+
+//funcion para elminar areas
+async function deleteArea(id) {
+    console.log('Registra Usuario ', id);
+    await fetch(`${apiURL}/a/${id}`, {
+        method: 'DELETE'
+    })
+    getAreas();
+}
