@@ -1,0 +1,18 @@
+[{
+  "_id": {
+    "$oid": "67c5c4763bb22ade7375e950"
+  },
+  "codigo": 1,
+  "nombrea": "Administracion de Sistemas",
+  "estado": 101,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c5cb4965a265f3fbd783b4"
+  },
+  "codigo": 2,
+  "nombrea": "Administracion Documental",
+  "estado": 101,
+  "__v": 0
+}]

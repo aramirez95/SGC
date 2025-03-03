@@ -15,7 +15,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.1/Chart.min.js"></script>
     </head>
-    <body>
+    <body onload="getSolicitudes()">
         <section class="container-fluid" id="Lista">
             <div class="col-sm-2 col-md-2">
                 <img class="logo2" src="../img/logo.png">
@@ -100,49 +100,25 @@
                     <br>
                     <div>
                         <main role="main" class="col-md-6 ml-sm-auto col-lg-7 px-4">
-                            <div class="table-responsive">
-                                <table class="table table-dark">
-                                <thead>
-                                    <tr>
-                                    <th scope="col">ID</th>
-                                    <th scope="col">Fecha</th>
-                                    <th scope="col">Asunto</th>
-                                    <th scope="col">Estado</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                    <th scope="row">1</th>
-                                    <td>07/05/2024</td>
-                                    <td>Solicitud de Informacion</td>
-                                    <td>En Proceso</td>
-                                    </tr>
-                                    <tr>
-                                    <th scope="row">2</th>
-                                    <td>01/05/2024</td>
-                                    <td>Quejas</td>
-                                    <td>Rechazada</td>
-                                    </tr>
-                                    <tr>
-                                    <th scope="row">3</th>
-                                    <td>01/07/2024</td>
-                                    <td>Recalamos</td>
-                                    <td>En Proceso</td>
-                                    </tr>
-                                    <tr>
-                                    <th scope="row">4</th>
-                                    <td>01/08/2024</td>
-                                    <td>Peticion</td>
-                                    <td>Gestionada</td>
-                                    </tr>
-                                    <tr>
-                                    <th scope="row">5</th>
-                                    <td>01/10/2024</td>
-                                    <td>Reclamo</td>
-                                    <td>Abierta</td>
-                                    </tr>
-                                </tbody>
-                                </table>
+                            <div class="col-sm-12 col-md-12" id="card">
+                                <div class="table-responsive">
+                                    <table class="table table-dark">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Id_Solicitud</th>
+                                                <th scope="col">Fecha</th>
+                                                <th scope="col">Asunto</th>
+                                                <th scope="col">Estado</th>
+                                                <th scope="col">Usuario</th>
+                                                <th scope="col">Funcionario</th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="Solicitudes">
+            
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </main>
                         <div class="col-md-3 ml-sm-auto col-lg-4 px-4">

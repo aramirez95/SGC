@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "67c5bfc3ab1500abe6aa31fd"
+  },
+  "nombres": "Andres Ramirez",
+  "email": "a.ramirez.a340@gmail.com",
+  "clave": "987654321",
+  "tipoUsuario": 1,
+  "area": 1,
+  "estado": 101,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c5c37a914baed1fd7f1820"
+  },
+  "nombres": "Andres Ramirez",
+  "email": "andres.framirez@soysena.edu.co",
+  "clave": "12345678",
+  "tipoUsuario": 1,
+  "area": 1,
+  "estado": 101,
+  "__v": 0
+}]
